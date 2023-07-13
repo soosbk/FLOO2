@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="banner" role="banner" style="background-color: #CCDBE2;">
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="banner-text text-center">
+                <h1>FLOO</h1>
+                <p style="font-weight:450">Yolo & Fire 당신은 어느쪽 입니까?</p>
+                <a href="#download" class="btn btn-large" style="background-color: #8399a3;">Find out more</a>
+            </div><!-- banner text -->
+        </div>
+    </div>
+</section>
+
+
+
+<body>
+
+
+    <section id="download" class="section download">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3>About This Page</h3>
+                <h4 style="margin-top: 80px;">욜로족과 파이어족을 위한 아래의 서비스를 제공합니다!</h4>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-tools"></span>
+                    <div class="feature-content">
+                        <h5>영수증</h5>
+                        <p>영수증을 업로드하여 당신의 욜로 또는 파이어 성향을 보여주세요! </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-desktop"></span>
+                    <div class="feature-content">
+                        <h5>MBTI 테스트</h5>
+                        <p>혹시 욜로족인지 파이어족인지 모르시나요! 그러면 저희가 준비한 테스트를 해보세요! </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 feature text-center">
+                    <span class="icon icon-genius"></span>
+                    <div class="feature-content">
+                        <h5>토론</h5>
+                        <p>저희가 제공하는 재밌는 주제들을 가지고 욜로족과 파이어족이 서로 토론을해봐요 ! </p>
+                    </div>
+                </div>
+    </section><!-- features -->
+
+
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <h3>Developer</h3>
+        </div>
+    </div>
+
+    <section id="teams" class="section teams">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="{% static 'images/김수빈.png' %}" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>김수빈</h4>
+                            <h5 class="role">국민대학교</h5>
+                            <p>💻email : soobin851@gamil.com</p>
+                        </div>
+                    </div><!-- person -->
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="{% static 'images/박주희.png' %}" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>박주희</h4>
+                            <h5 class="role">단국대학교</h5>
+                            <p>💻email : juliaee@naver.com</p>
+                        </div>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="{% static 'images/서희찬.png' %}" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>서희찬</h4>
+                            <h5 class="role">동국대학교</h5>
+                            <p>💻email : gmlcks0513@naver.com </p>
+                        </div>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="{% static 'images/최은윤.png' %}" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>최은윤</h4>
+                            <h5 class="role">홍익대학교</h5>
+                            <p>💻email : choiey073@naver.com</p>
+                        </div>
+                    </div><!-- person -->
+                </div>
+            </div>
+        </div>
+    </section><!-- teams -->
+
+    <section id="testimonials" class="section testimonials no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="col-md-6">
+                                <div class="avatar">
+                                    <img src="images/testimonial-1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    <p>"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
+                                        odio dui. Aenean eu leo quam..."
+                                    </p>
+                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-6">
+                                <div class="avatar">
+                                    <img src="images/testimonial-2.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    <p>"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean
+                                        lacinia bibendum nulla sed consectetur...."
+                                    </p>
+                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                </blockquote>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- flexslider -->
+            </div>
+        </div>
+    </section>
+    
+
+
+</body>
+
+
+{% endblock %}

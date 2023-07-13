@@ -1,0 +1,15 @@
+img{
+    height: 500px; width: 300px;
+}
+
+
+.addtxt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    width: 350px;
+    background-color: #e5e8ed;
+    font-weight: 500;
+}
+

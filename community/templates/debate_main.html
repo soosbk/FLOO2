@@ -1,0 +1,43 @@
+{%extends 'base.html' %}
+{%load static%}
+{%block content%}
+
+<head>
+    <link rel="stylesheet" href='{% static "debate_main.css" %}' />
+</head>
+<div class="container-fluid">
+
+
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="main-container">
+        {% for debate in debates.all %}
+
+        
+        <a href="{%url 'community:debate_detail' debate.id %}">
+            <div class="col">
+                <div class="card h-100" id="card">
+                    
+                    <div class="card-body">
+                    <p id="rcorners1">{{debate.title}}</p>
+                        
+                    </div>
+                    <div class="card-footer" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+                        <small class="text-muted">
+                            {{debate.date}}
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        
+        {% endfor %}
+    </div>
+
+    
+    
+
+</section>
+
+</div>
+
+{%endblock%}
